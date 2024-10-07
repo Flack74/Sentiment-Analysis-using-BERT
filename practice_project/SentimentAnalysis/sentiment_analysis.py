@@ -18,7 +18,7 @@ def sentiment_analyzer(text_to_analyse):
     
     formatted_response = json.loads(response.text)
     
-    if repose.status_code == 200:
+    if response.status_code == 200:
         label = formatted_response['documentSentiment']['label']
         score = formatted_response['documentSentiment']['score']
     
